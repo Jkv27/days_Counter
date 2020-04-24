@@ -17,6 +17,10 @@
     <title>Days Calculator</title>
   </head>
   <body>
+     
+
+
+
     <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
@@ -31,6 +35,10 @@
       </nav>
     </div>
         <section>
+          <div class="container">
+            <label>Name :</label>
+            <input type="text" class="form-control" id="name">
+          </div>
             <div class="container">
               <h1 class="h1 text-center bg-danger text-white head rounded">DAYS COUNTER</h1>
             </div>
@@ -59,9 +67,23 @@
                         <button class="btn btn-outline-danger" type="button" id="button-addon1" onclick="dayDiff()">Show Days</button>
                       </div>
                       <input type="text" id="result" class="form-control" placeholder=""  aria-describedby="button-addon1">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-danger" type="button" id="button-addon2" onclick="addUser()">Add</button>
+                      </div>
                     </div>
                   </div>
                 </div>
+                
+                
+          </section>
+          <section>
+            <div class="container">
+              <ul class="list-group" id="users">
+               
+              </ul>
+
+              
+            </div>
           </section>
             
             <script src="main.js"></script>

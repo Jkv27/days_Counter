@@ -31,11 +31,29 @@ $('#datepicker1').datepicker({
 
              }
                
-             
-
-             
-
-
      }
+
+function addUser() {
+
+   const nameInput = document.querySelector('#name');
+   const inputDay = document.querySelector('#result');
+   const userList = document.querySelector('#users');
+   
+   const li = document.createElement('li');
+   li.appendChild(document.createTextNode(`${nameInput.value} has been living for ${inputDay.value}`));
+   li.classList.add('list-group-item');
+   userList.appendChild(li);
+
+ // userList.appendChild(document.createTextNode(`${nameInput.value} : ${inputDay.value}`));
+
+   nameInput.value = '';
+   inputDay.value = '';
+
+  
+   
+ 
+
+
+}     
            
            
